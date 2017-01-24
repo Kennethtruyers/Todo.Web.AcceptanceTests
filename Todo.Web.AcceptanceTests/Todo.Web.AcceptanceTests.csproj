@@ -68,11 +68,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiTests.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskServiceTestBase.cs" />
+    <Compile Include="Tests\CompletingATask.cs" />
+    <Compile Include="Tests\CreatingANewTask.cs" />
+    <Compile Include="Tests\CreatingAnOverdueTask.cs" />
+    <Compile Include="Tests\CreatingAPendingTaskThatIsNotOverdue.cs" />
+    <Compile Include="Tests\CreatingMultipleTasks.cs" />
+    <Compile Include="Tests\DeletingATask.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Tests\UpdatingATask.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
