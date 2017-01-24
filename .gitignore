@@ -1,0 +1,9 @@
+.vs/
+packages/
+*.ncrunch*
+**/App_Data/
+**/bin/
+**/obj/
+*.user
+*.cache
+artifacts/
